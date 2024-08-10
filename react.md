@@ -26,7 +26,8 @@
 - ```node_modules/```: Contains all the dependencies your project needs (installed via npm).
 
 # State and Props 
-- State is a built-in object in React components that allows them to manage and track changes in data over time. State is dynamic; when state changes, the component re-renders to reflect the updated data.
+- <b>State</b> is a built-in object in React components that allows them to manage and track changes in data over time. State is dynamic; when state changes, the component re-renders to reflect the updated data.
+- Unlike props, which are passed to components and are immutable, state is managed within the component and can change, causing the component to re-render.
 ``` 
 import React, { useState } from 'react';
 
@@ -54,7 +55,7 @@ export default App;
   - <b>Updating State</b>: When you click the "Increase" button, setCount(count + 1) is called, updating the state and causing the component to re-render with the new count value.
 <br />
 
-- Props (short for "properties") are used to pass data from one component to another. Unlike state, props are read-only and cannot be modified by the component that receives them.
+- <b>Props</b> (short for "properties") are used to pass data from one component to another. Unlike state, props are read-only and cannot be modified by the component that receives them.
 
 Creating a child component that receives data via props:
 
@@ -102,3 +103,14 @@ export default App;
 <br />
   - <b>Passing Props:</b> The Counter component receives three props: count, onIncrease, and onDecrease. These props are passed from the App component.
   - <b>Using Props:</b> Inside Counter, the props are used to display the current count and handle button clicks, which update the count.
+
+# What Are Hooks?
+- Hooks allow function components to have access to state and other React features. Because of this, class components are generally no longer needed.
+- Basic Hooks in React :
+   - The React ```useState``` Hook allows us to track state in a function component.
+   - useEffect: Handles side effects like fetching data, directly manipulating the DOM, or setting up subscriptions.
+   - useContext: Accesses context values.
+   - useReducer: Manages complex state logic (like a more powerful version of useState).
+   - useCallback: Memoizes functions to prevent unnecessary re-renders.
+   - useMemo: Memoizes expensive calculations to optimize performance.
+   - useRef: Directly accesses and manipulates DOM elements.

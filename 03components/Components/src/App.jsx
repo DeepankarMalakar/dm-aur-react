@@ -4,14 +4,16 @@ import Human from './FunctionComponent'
 import User from './PropsExample'
 
 function App() {
-  // const [count, setCount] = useState(0)
 
   return (
     <>
     <h1>Hello</h1>
     <Car />
     <Human />
-    <User name="Richard" />
+
+    <h1>Props Example</h1>
+    <User nameProp="Richard" ageProp= {23} deptProp="HR" emailProp= "richard123@gmail.com"/>
+    <User nameProp="Angela" ageProp= {22} deptProp="IT" emailProp= "angela89@gmail.com"/>
     </>
   )
 }
