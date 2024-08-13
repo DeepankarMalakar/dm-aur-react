@@ -9,9 +9,9 @@ function Mainroot() {
     return (
         <>
             <App />
-            <Counter />
             <Goal isGoal={false} />
             <Goal isGoal={true} />
+            <Counter />
         </>
     )
 }
