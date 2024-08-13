@@ -2,6 +2,7 @@ import { useState } from 'react'
 import Car from './ClassComponent'
 import Human from './FunctionComponent'
 import User from './PropsExample'
+import UserList from './UseEffectExample'
 
 function App() {
 
@@ -14,6 +15,10 @@ function App() {
     <h1>Props Example</h1>
     <User nameProp="Richard" ageProp= {23} deptProp="HR" emailProp= "richard123@gmail.com"/>
     <User nameProp="Angela" ageProp= {22} deptProp="IT" emailProp= "angela89@gmail.com"/>
+
+    <div>
+      <UserList />
+    </div>
     </>
   )
 }

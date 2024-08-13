@@ -108,9 +108,9 @@ export default App;
 - Hooks allow function components to have access to state and other React features. Because of this, class components are generally no longer needed.
 - Basic Hooks in React :
    - The React ```useState``` Hook allows us to track state in a function component.
-   - useEffect: Handles side effects like fetching data, directly manipulating the DOM, or setting up subscriptions.
-   - useContext: Accesses context values.
-   - useReducer: Manages complex state logic (like a more powerful version of useState).
-   - useCallback: Memoizes functions to prevent unnecessary re-renders.
-   - useMemo: Memoizes expensive calculations to optimize performance.
-   - useRef: Directly accesses and manipulates DOM elements.
+   - ```useEffect```: Handles side effects like fetching data, directly manipulating the DOM, or setting up subscriptions.
+   - ```useContext```: Accesses context values.
+   - ```useReducer```: Manages complex state logic (like a more powerful version of useState).
+   - ```useCallback```: Memoizes functions to prevent unnecessary re-renders.
+   - ```useMemo```: Memoizes expensive calculations to optimize performance.
+   - ```useRef```: Directly accesses and manipulates DOM elements.
